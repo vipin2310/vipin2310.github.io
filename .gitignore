@@ -1,0 +1,9 @@
+# LaTeX build files (the PDFs themselves are committed so GitHub Pages can serve them)
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.fls
+cv/*.fdb_latexmk
+cv/*.synctex.gz
+.DS_Store
+__pycache__/

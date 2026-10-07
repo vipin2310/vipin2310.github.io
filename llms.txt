@@ -1,0 +1,59 @@
+# Vipin Singh
+
+> Vipin Singh is a PhD Candidate in Data Science at Berliner Hochschule für Technik (BHT) in Berlin, Germany, supervised by Prof. Dr. Felix Bießmann in the Cognitive Algorithms Lab. The research develops machine learning for environmental monitoring (urban sewer systems, soil science, groundwater) and evaluates it holistically: predictive performance, model complexity and robustness when data are incomplete, noisy or sparse.
+
+Website: https://vipin-singh.bio/. Last updated: 2026-10-07.
+
+## Contact
+
+- Email: vipin.singh@bht-berlin.de
+- Office: Berliner Hochschule für Technik, Building E (Haus Else-Neumann), Room E_.04.011, Luxemburger Straße 10, 13353 Berlin, Germany
+- GitHub: https://github.com/vipin2310
+- LinkedIn: https://www.linkedin.com/in/vipin-singh-131402271
+- Google Scholar: https://scholar.google.com/citations?user=9RYzrb4AAAAJ
+- ORCID: https://orcid.org/0000-0002-4472-8285
+
+## Key pages
+
+- [CV in Markdown](https://vipin-singh.bio/cv.md): experience, education, projects, publications with per-paper contribution statements (CRediT), news and talks
+- [CV as PDF](https://vipin-singh.bio/cv/Vipin_Singh_CV.pdf): formatted for print; [short version](https://vipin-singh.bio/cv/Vipin_Singh_CV_short.pdf)
+- [Publications in BibTeX](https://vipin-singh.bio/publications.bib): all 7 publications
+- [Homepage](https://vipin-singh.bio/): the same content as HTML, with schema.org JSON-LD (Person, ScholarlyArticle)
+
+## Research interests
+
+Holistic model evaluation, Robustness, Time series forecasting, Spatiotemporal modeling, Multimodal deep learning, Uncertainty quantification, Expert-AI collaboration.
+
+## Research projects
+
+- Groundwater level prediction at unmonitored locations (2025–present, with BGR). Can a dense monitoring network predict groundwater levels at future times and at locations without a well, and what limits it? With BGR, we benchmark temporal, spatial and coupled models for Brandenburg under one evaluation protocol. Manuscript in preparation.
+- SoilNet, AI-assisted soil horizon description (2025–present, with BGR). Describing soil horizons from profile images is slow and varies between experts. SoilNet mirrors the experts' annotation workflow, and in a user study, experts working with the SoilNet App annotated more accurately and more consistently. Live demo: https://soilnet.demo.calgo-lab.de/; Code: https://github.com/calgo-lab/BGR; BGR: https://www.bgr.bund.de/.
+- RIWWER, resilient forecasting for urban sewer systems (2023–present, with University of Duisburg-Essen and partners). Combined sewer systems overflow during heavy rain. In the joint project RIWWER, I coordinated the AI work package: forecasting models for rain basins that stay robust to sensor failures and run both in the cloud and on embedded FPGAs at the edge. Live demo: https://riwwer.demo.calgo-lab.de/; Code: https://github.com/calgo-lab/resilient-timeseries-evaluation; Project: https://www.riwwer.fraunhofer.de/.
+
+## Publications
+
+- [SoilNet App: AI-Assisted Expert-level Annotations of Soil Horizons](https://doi.org/10.24963/ijcai.2026/993). Vipin Singh, Joey Prüssing, Teodor Chiaburu, Einar Eberhardt, Sina Hesse, Stefan Broda, Frank Haußer, Felix Bießmann. Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026), 2026. Conference paper (Demo Track); Vipin Singh is first author.
+- [A Resilient Solution for Sewer Overflow Monitoring Across Cloud and Edge](https://doi.org/10.24963/ijcai.2026/994). Vipin Singh, Tianheng Ling, Peter Ghaly, Felix Grimmeisen, Gregor Schiele, Felix Bießmann. Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026), 2026. Conference paper (Demo Track); Vipin Singh is first author.
+- [SoilNet: A multimodal multitask model for hierarchical classification of soil horizons](https://doi.org/10.1016/j.geoderma.2026.117684). Vipin Singh, Teodor Chiaburu, Einar Eberhardt, Stefan Broda, Joey Prüssing, Frank Haußer, Felix Bießmann. Geoderma 466, 117684, 2026. Journal paper; Vipin Singh is co-first author (equal contribution, listed first).
+- [Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation](https://arxiv.org/abs/2509.24873). Teodor Chiaburu, Vipin Singh, Frank Haußer, Felix Bießmann. CLEAR-AI Workshop at the European Conference on Artificial Intelligence (ECAI 2025), 2025. Workshop paper; Vipin Singh is co-author (author 2 of 4).
+- [Automated Energy-Aware Time-Series Model Deployment on Embedded FPGAs for Resilient Combined Sewer Overflow Management](https://doi.org/10.1109/ISC266238.2025.11293267). Tianheng Ling, Vipin Singh, Chao Qian, Felix Bießmann, Gregor Schiele. 2025 IEEE International Smart Cities Conference (ISC2), 2025. Conference paper; Vipin Singh is co-first author (equal contribution, listed second).
+- [Evaluating Time Series Models for Urban Wastewater Management: Predictive Performance, Model Complexity and Resilience](https://doi.org/10.23919/SpliTech65624.2025.11091801). Vipin Singh, Tianheng Ling, Teodor Chiaburu, Felix Bießmann. 2025 10th International Conference on Smart and Sustainable Technologies (SpliTech), 2025. Conference paper; Vipin Singh is first author.
+- [Data-driven Modeling of Combined Sewer Systems for Urban Sustainability: An Empirical Evaluation](https://ceur-ws.org/Vol-3958/piai24-short1.pdf). Vipin Singh, Tianheng Ling, Teodor Chiaburu, Felix Bießmann. 2nd Workshop on Public Interest AI at the 47th German Conference on AI (KI 2024), CEUR Workshop Proceedings 3958, 2024. Workshop paper; Vipin Singh is first author.
+
+## News and talks
+
+- 2026-08-26: [Presented two demos at IJCAI-ECAI 2026 in Bremen](https://vipin-singh.bio/news/2026-08-ijcai.html)
+- 2026-02-06: [SoilNet published in Geoderma](https://vipin-singh.bio/news/2026-02-geoderma.html)
+- 2025-11-19: [Dies academicus at BHT, Hochschultag 2025](https://vipin-singh.bio/news/2025-11-hochschultag.html)
+- 2025-10-14: [Presented our FPGA deployment paper at IEEE ISC2 2025 in Patras](https://vipin-singh.bio/news/2025-10-isc2.html)
+- 2025-10-09: [RIWWER project successfully completed](https://vipin-singh.bio/news/2025-10-riwwer.html)
+- 2025-09-18: [Presented SoilNet at KIDA-KON 2025 in Braunschweig](https://vipin-singh.bio/news/2025-09-kida-kon.html)
+- 2025-07-18: [Graduation ceremony at BHT, Department VI](https://vipin-singh.bio/news/2025-07-graduation.html)
+- 2025-07-08: [Presented my first full paper at SpliTech 2025 in Split](https://vipin-singh.bio/news/2025-07-splitech.html)
+
+## Optional
+
+- [Cognitive Algorithms Lab](https://calgo-lab.de/): research group at BHT
+- [Berlin Initiative for Applied Foundation Model Research profile](https://foundationmodels.bht-berlin.de/team/vipin-singh/)
+- [SoilNet live demo](https://soilnet.demo.calgo-lab.de/): AI-assisted soil horizon annotation
+- [RIWWER live demo](https://riwwer.demo.calgo-lab.de/): sewer overflow forecasting dashboard

@@ -1,0 +1,533 @@
+# Single source of truth for the website, both CV PDFs, cv.md, llms.txt and publications.bib.
+# Edit this file, then run:  uv run scripts/build.py          (website + text files)
+#                             uv run scripts/build.py --pdf    (also the CV PDFs, needs LuaLaTeX)
+
+site:
+  url: https://vipin-singh.bio/            # custom domain; also written to CNAME by the build
+
+person:
+  name: Vipin Singh
+  given_name: Vipin
+  family_name: Singh
+  headline: PhD Candidate in Data Science
+  cv_title: Data Science Researcher & Machine Learning Engineer
+  affiliation: Berliner Hochschule für Technik (BHT)
+  affiliation_url: https://www.bht-berlin.de/
+  location: Berlin, Germany
+  email: vipin.singh@bht-berlin.de
+  address: [Berliner Hochschule für Technik, "Building E (Haus Else-Neumann), Room E_.04.011", Luxemburger 
+      Straße 10, 13353 Berlin, Germany]
+  links:
+    github: https://github.com/vipin2310
+    linkedin: https://www.linkedin.com/in/vipin-singh-131402271
+    scholar: https://scholar.google.com/citations?user=9RYzrb4AAAAJ
+    orcid: https://orcid.org/0000-0002-4472-8285
+    lab: https://calgo-lab.de/
+    bht_profile: https://foundationmodels.bht-berlin.de/team/vipin-singh/
+
+about:
+- >-
+  I am a PhD candidate in Data Science at the Berliner Hochschule für Technik (BHT), supervised by Prof. Dr. Felix
+  Bießmann in the [Cognitive Algorithms Lab](https://calgo-lab.de/).
+- >-
+  I build machine learning for environmental monitoring and evaluate it holistically: not only accuracy, but also
+  model complexity and robustness when data are incomplete, noisy or sparse. With partners such as the Federal Institute
+  for Geosciences and Natural Resources (BGR), I apply this to urban sewer systems, soil science and groundwater.
+interests:
+- Holistic model evaluation
+- Robustness
+- Time series forecasting
+- Spatiotemporal modeling
+- Multimodal deep learning
+- Uncertainty quantification
+- Expert-AI collaboration
+profile: >-
+  Data science researcher with a background in mathematics and four years of industrial software
+  development. I develop and evaluate machine learning models for environmental applications, from time series
+  forecasting in urban sewer systems to multimodal soil horizon classification and spatiotemporal groundwater
+  level prediction, with a focus on holistic evaluation protocols that assess predictive performance, model
+  complexity and robustness together. Experienced in coordinating work packages in joint research projects
+  with public agencies and industry.
+profile_short: >-
+  Data science researcher with a background in mathematics and industrial software development. Experienced in
+  building holistic evaluation protocols for machine learning models and managing research projects.
+
+projects:
+- id: groundwater
+  title: Groundwater level prediction at unmonitored locations
+  partner: with BGR
+  years: 2025–present
+  text: >-
+    Can a dense monitoring network predict groundwater levels at future times and at locations without a well, and
+    what limits it? With BGR, we benchmark temporal, spatial and coupled models for Brandenburg under one evaluation
+    protocol. Manuscript in preparation.
+  tags: [Spatiotemporal modeling, Gaussian Processes, Uncertainty]
+  links: []
+  figure: project-groundwater.svg
+  caption: >-
+    Forecast groundwater levels in time at monitored wells, and predict them in space where no well exists.
+- id: soil
+  title: SoilNet, AI-assisted soil horizon description
+  partner: with BGR
+  years: 2025–present
+  text: >-
+    Describing soil horizons from profile images is slow and varies between experts. SoilNet mirrors the experts'
+    annotation workflow, and in a user study, experts working with the SoilNet App annotated more accurately and
+    more consistently.
+  tags: [Multimodal deep learning, Computer vision, Expert-AI collaboration]
+  links:
+  - {label: Live demo, url: "https://soilnet.demo.calgo-lab.de/"}
+  - {label: Code, url: "https://github.com/calgo-lab/BGR"}
+  - {label: BGR, url: "https://www.bgr.bund.de/"}
+  figure: project-soil.webp
+  caption: A soil profile image with horizon symbols, depth markers and horizon-specific tabular information 
+    (Singh et al., Geoderma 2026, Fig. 1).
+- id: sewer
+  title: RIWWER, resilient forecasting for urban sewer systems
+  partner: with University of Duisburg-Essen and partners
+  years: 2023–present
+  text: >-
+    Combined sewer systems overflow during heavy rain. In the joint project RIWWER, I coordinated the AI work package:
+    forecasting models for rain basins that stay robust to sensor failures and run both in the cloud and on embedded
+    FPGAs at the edge.
+  tags: [Time series forecasting, Robustness, Edge AI]
+  links:
+  - {label: Live demo, url: "https://riwwer.demo.calgo-lab.de/"}
+  - {label: Code, url: "https://github.com/calgo-lab/resilient-timeseries-evaluation"}
+  - {label: Project, url: "https://www.riwwer.fraunhofer.de/"}
+
+# Newest first. `me` marks the author index (0-based) for bolding; `equal` / `supervision` mark footnotes.
+  figure: project-sewer.webp
+  caption: Global models in the cloud use the whole sensor network; local models on edge devices keep 
+    forecasting when the network fails.
+publications:
+- key: singh2026soilnetapp
+  title: "SoilNet App: AI-Assisted Expert-level Annotations of Soil Horizons"
+  authors: [Vipin Singh, Joey Prüssing, Teodor Chiaburu, Einar Eberhardt, Sina Hesse, Stefan Broda, Frank 
+      Haußer, Felix Bießmann]
+  venue: Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026)
+  venue_short: IJCAI-ECAI 2026
+  type: Conference
+  track: Demo Track
+  year: 2026
+  month: 8
+  place: Bremen, Germany
+  pages: 8518–8521
+  doi: 10.24963/ijcai.2026/993
+  topic: soil
+  summary: >-
+    A web-based demonstrator that guides experts through the tasks needed for expert-level soil horizon
+    annotations from profile images. A user study with annotation experts shows that collaborating with the
+    model increases expert performance and inter-annotator consistency.
+  contribution: Conceptualization, Methodology, Software, Formal analysis, Investigation, Writing – Original 
+    Draft, Visualization
+  bibtype: inproceedings
+  booktitle: "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence, {IJCAI-26}"
+  publisher: International Joint Conferences on Artificial Intelligence Organization
+  figure: singh2026soilnetapp.webp
+  demo: https://soilnet.demo.calgo-lab.de/
+  fit: cover
+  caption: 'The SoilNet App: AI-suggested horizon labels, sorted by model confidence, that experts accept or correct.'
+- key: singh2026resilient
+  title: "A Resilient Solution for Sewer Overflow Monitoring Across Cloud and Edge"
+  authors: [Vipin Singh, Tianheng Ling, Peter Ghaly, Felix Grimmeisen, Gregor Schiele, Felix Bießmann]
+  venue: Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI 2026)
+  venue_short: IJCAI-ECAI 2026
+  type: Conference
+  track: Demo Track
+  year: 2026
+  month: 8
+  place: Bremen, Germany
+  pages: 8522–8525
+  doi: 10.24963/ijcai.2026/994
+  arxiv: "2605.10592"
+  topic: sewer
+  summary: >-
+    A web-based demonstrator that integrates our deep learning forecasting methods for combined sewer overflow
+    monitoring across cloud and edge. Its interactive dashboard stays usable during network outages, enabling
+    timely preventive action during extreme rainfall.
+  contribution: Conceptualization, Methodology, Software, Formal analysis, Investigation, Writing – Original 
+    Draft, Visualization, Project administration
+  bibtype: inproceedings
+  booktitle: "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence, {IJCAI-26}"
+  publisher: International Joint Conferences on Artificial Intelligence Organization
+  figure: singh2026resilient-demo.webp
+  fit: cover-right
+  caption: >-
+    The live demo at time step 2244 (4 April 2023): sensor network map with one sensor offline, and the filling
+    level of an overflow basin over the last 72 hours with the 12-hour forecast.
+  demo: https://riwwer.demo.calgo-lab.de/
+- key: singh2026soilnet
+  title: "SoilNet: A multimodal multitask model for hierarchical classification of soil horizons"
+  authors: [Vipin Singh, Teodor Chiaburu, Einar Eberhardt, Stefan Broda, Joey Prüssing, Frank Haußer, Felix 
+      Bießmann]
+  equal: [0, 1]
+  supervision: [5, 6]
+  venue: Geoderma 466, 117684
+  venue_short: Geoderma
+  type: Journal
+  year: 2026
+  month: 2
+  doi: 10.1016/j.geoderma.2026.117684
+  arxiv: "2508.03785"
+  code: https://github.com/calgo-lab/BGR
+  open_access: true
+  topic: soil
+  summary: >-
+    A multimodal multitask neural network for automatic soil horizon classification from profile images and
+    metadata. Its grey-box design mirrors the annotation procedure used by domain experts.
+  contribution: Conceptualization, Methodology, Software, Formal analysis, Investigation, Writing – Original 
+    Draft, Visualization
+  bibtype: article
+  journal: Geoderma
+  volume: "466"
+  bibpages: "117684"
+  publisher: Elsevier
+  figure: singh2026soilnet.webp
+  caption: "SoilNet's three tasks mirror the expert workflow: find the horizon depths, predict their features, then
+    classify them."
+- key: chiaburu2025uncertainty
+  title: "Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation"
+  authors: [Teodor Chiaburu, Vipin Singh, Frank Haußer, Felix Bießmann]
+  supervision: [2, 3]
+  venue: CLEAR-AI Workshop at the European Conference on Artificial Intelligence (ECAI 2025)
+  venue_short: ECAI 2025 Workshop
+  type: Workshop
+  year: 2025
+  month: 10
+  place: Bologna, Italy
+  arxiv: "2509.24873"
+  topic: soil
+  summary: >-
+    Applies conformal prediction to SoilNet to obtain calibrated uncertainty estimates, and shows the benefit of
+    calibration in a simulated human-in-the-loop annotation pipeline with a limited query budget.
+  contribution: Validation
+  bibtype: inproceedings
+  booktitle: "{CLEAR-AI} Workshop at the European Conference on Artificial Intelligence ({ECAI} 2025)"
+  figure: chiaburu2025uncertainty.webp
+  caption: Correcting the predictions flagged by conformal intervals improves segmentation (IoU) faster than 
+    random or Monte Carlo dropout selection.
+- key: ling2025fpga
+  title: "Automated Energy-Aware Time-Series Model Deployment on Embedded FPGAs for Resilient Combined Sewer Overflow
+    Management"
+  authors: [Tianheng Ling, Vipin Singh, Chao Qian, Felix Bießmann, Gregor Schiele]
+  equal: [0, 1]
+  venue: 2025 IEEE International Smart Cities Conference (ISC2)
+  venue_short: IEEE ISC2 2025
+  type: Conference
+  year: 2025
+  month: 10
+  place: Patras, Greece
+  pages: 1–6
+  doi: 10.1109/ISC266238.2025.11293267
+  arxiv: "2508.13905"
+  topic: sewer
+  summary: >-
+    Deploys time series models on resource-constrained edge devices for combined sewer monitoring, with an
+    automated hardware-aware pipeline that optimizes model configurations for energy consumption and
+    predictive performance.
+  contribution: Methodology, Software, Validation, Writing – Review & Editing, Visualization
+  bibtype: inproceedings
+  booktitle: "2025 IEEE International Smart Cities Conference (ISC2)"
+  publisher: IEEE
+  figure: ling2025fpga.webp
+  caption: The ElasticNode V5 board with an AMD Spartan-7 FPGA, which runs the forecasting models at the edge.
+- key: singh2025timeseries
+  title: "Evaluating Time Series Models for Urban Wastewater Management: Predictive Performance, Model Complexity
+    and Resilience"
+  authors: [Vipin Singh, Tianheng Ling, Teodor Chiaburu, Felix Bießmann]
+  venue: 2025 10th International Conference on Smart and Sustainable Technologies (SpliTech)
+  venue_short: SpliTech 2025
+  type: Conference
+  year: 2025
+  month: 6
+  place: Bol and Split, Croatia
+  pages: 1–6
+  doi: 10.23919/SpliTech65624.2025.11091801
+  arxiv: "2504.17461"
+  topic: sewer
+  summary: >-
+    A protocol for evaluating neural forecasting architectures for combined sewer systems on predictive
+    performance, model complexity and robustness to data perturbations, including peak events and a comparison
+    of global and local modeling paradigms.
+  contribution: Conceptualization, Methodology, Software, Formal analysis, Investigation, Writing – Original 
+    Draft, Visualization, Project administration
+  bibtype: inproceedings
+  booktitle: "2025 10th International Conference on Smart and Sustainable Technologies ({SpliTech})"
+  publisher: IEEE
+  figure: singh2025timeseries.webp
+  caption: 'One of the perturbations used to test robustness: a clean sensor signal (left) corrupted with outliers
+    (right).'
+- key: singh2024sewer
+  title: "Data-driven Modeling of Combined Sewer Systems for Urban Sustainability: An Empirical Evaluation"
+  authors: [Vipin Singh, Tianheng Ling, Teodor Chiaburu, Felix Bießmann]
+  venue: 2nd Workshop on Public Interest AI at the 47th German Conference on AI (KI 2024), CEUR Workshop 
+    Proceedings 3958
+  venue_short: KI 2024 Workshop
+  type: Workshop
+  year: 2024
+  month: 9
+  place: Würzburg, Germany
+  url: https://ceur-ws.org/Vol-3958/piai24-short1.pdf
+  arxiv: "2408.11619"
+  topic: sewer
+  summary: >-
+    Compares neural time series models for forecasting rain basin filling levels during network outages,
+    contrasting global models with access to all sensors against local models restricted to nearby sensors.
+  contribution: Conceptualization, Methodology, Software, Formal analysis, Investigation, Writing – Original 
+    Draft, Visualization, Project administration
+  bibtype: inproceedings
+  booktitle: "Proceedings of the 2nd Workshop on Public Interest {AI} ({PI-AI} 2024), co-located with {KI} 2024"
+  series: CEUR Workshop Proceedings
+  volume: "3958"
+  publisher: CEUR-WS.org
+
+  figure: singh2024sewer.webp
+  caption: 'A combined sewer system: during heavy rain, rain basins can overflow into surface waters.'
+experience:
+- org: Berliner Hochschule für Technik (BHT)
+  role: Research Associate (PhD Candidate), Data Science
+  start: Feb 2025
+  end: present
+  place: Berlin, Germany
+  items:
+  - Multimodal deep learning models for automatic soil horizon description from profile images and metadata, 
+    with BGR.
+  - Spatiotemporal groundwater level prediction at unmonitored locations, with BGR.
+  - Continuation of the RIWWER work packages on time series modeling for urban wastewater management.
+  - Teaching support in data science courses, including preparing material and substitute lecturing.
+- org: Berliner Hochschule für Technik (BHT)
+  role: Student Research Assistant, Data Science
+  start: Dec 2023
+  end: Jan 2025
+  place: Berlin, Germany
+  items:
+  - Machine learning models for time series forecasting in urban wastewater management.
+  - Evaluation protocols for predictive performance, model complexity and robustness to data perturbations.
+  - Coordination of the AI work package in the RIWWER research project.
+- org: NeuroCheck GmbH
+  role: Software Developer, Industrial Image Processing
+  start: Oct 2018
+  end: Aug 2022
+  place: Stuttgart, Germany
+  items:
+  - Image processing and computer vision algorithms for industrial quality inspection systems (C#, .NET).
+  - Custom image processing modules and plugins for the NeuroCheck software.
+  - Tailored solutions for clients together with engineers and quality assurance specialists.
+- org: Thinking Objects GmbH
+  role: Intern, System Integration
+  start: May 2016
+  end: May 2016
+  place: Stuttgart, Germany
+  items: []
+
+education:
+- degree: PhD in Data Science (ongoing)
+  org: Berliner Hochschule für Technik (BHT)
+  start: Feb 2025
+  end: present
+  items:
+  - "Supervisor: Prof. Dr. Felix Bießmann"
+- degree: M.Sc. Data Science
+  org: Berliner Hochschule für Technik (BHT)
+  start: Oct 2022
+  end: Jan 2025
+  items:
+  - "Thesis: *Time Series Modeling for Urban Water Management*"
+  - "Final grade: 1.0 (German scale, 1.0 is best)"
+- degree: B.Sc. Mathematics
+  org: Hochschule für Technik Stuttgart
+  start: Sep 2018
+  end: Aug 2022
+  items:
+  - "Thesis: *Development of a Deflectometry-based Inspection System for Reflective Surfaces*"
+  - "Final grade: 1.3 (German scale, 1.0 is best)"
+
+service:
+- role: Member of the student council (Fachschaftsrat), Department VI
+  org: Berliner Hochschule für Technik (BHT)
+  when: during M.Sc. studies
+  text: Events, help desks and onboarding for students; logistics of the student learning room.
+
+skills:
+- {label: Programming, value: "Python, C#, Java"}
+- {label: Machine learning, value: "PyTorch, scikit-learn, OpenCV, pandas, NumPy"}
+- {label: Tools, value: "Git, Linux, Docker, Kubernetes"}
+
+languages:
+- {label: German, value: Native}
+- {label: English, value: Fluent}
+- {label: Hindi, value: Proficient}
+
+# News & talks, newest first. Keep titles short: visitors mostly look at the image and the headline;
+# the full story stays on LinkedIn. `fit: contain` for figures that must not be cropped.
+news:
+- date: 2026-08-26
+  title: Presented two demos at IJCAI-ECAI 2026 in Bremen
+  image: 2026-08-ijcai-3.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7498347025810321408/
+  slug: 2026-08-ijcai
+  author: Vipin Singh
+  author_url: https://www.linkedin.com/in/vipin-singh-131402271
+  images:
+  - 2026-08-ijcai-3.jpg
+  - 2026-08-ijcai-1.jpg
+  - 2026-08-ijcai-2.jpg
+  - 2026-08-ijcai-4.jpg
+  body: |
+    Last week I attended IJCAI-ECAI 2026 in Bremen and had the chance to present two demo papers! 🎉 Seeing two projects that I have worked on come to life at such a big conference was very rewarding:
+
+    🌧️ “A Resilient Solution for Sewer Overflow Monitoring across Cloud and Edge” demonstrates how AI-based forecasts can support sewer overflow monitoring—even when the connection to the cloud is interrupted. Read it here: https://doi.org/10.24963/ijcai.2026/994
+
+    🌱 “SoilNet App: AI-Assisted Expert-level Annotations of Soil Horizons” explores how AI can assist soil experts with a highly complex annotation task. Our study suggests that this collaboration can improve both expert performance and consistency. Read it here: https://doi.org/10.24963/ijcai.2026/993
+
+    Beyond presenting the demos, what I valued most about IJCAI was meeting the research community. I especially enjoyed the conversations at the demo booths, where I met many interesting people, received thoughtful questions and new perspectives, and discussed our work with researchers from different areas of AI.
+
+    Bremen provided a nice setting for the conference, and the banquet at the Weserstadion was another highlight. All these experiences made this conference particularly memorable.
+
+    None of this would have been possible without the support of the people behind the projects:
+
+    🌧️ Sewer overflow monitoring: Tianheng Ling, Peter Ghaly, M.Sc., Felix Grimmeisen, Gregor Schiele, and Felix Biessmann.
+
+    🌱 SoilNet App: Joey Prüssing, Teodor Chiaburu, Einar Eberhardt, Sina Hesse, Stefan Broda, Frank Haußer, and Felix Biessmann.
+
+    A special thank you to my supervisor, Felix Biessmann, for supporting me throughout both projects and for joining me in presenting the demos.
+
+    I am leaving with many new impressions and am grateful that I had the opportunity to attend such a great conference.
+- date: 2026-02-06
+  title: SoilNet published in Geoderma
+  image: 2026-02-geoderma-1.jpg
+  fit: contain
+  url: https://www.linkedin.com/feed/update/urn:li:share:7425513348609363968/
+  slug: 2026-02-geoderma
+  author: Vipin Singh
+  author_url: https://www.linkedin.com/in/vipin-singh-131402271
+  images:
+  - 2026-02-geoderma-1.jpg
+  body: |
+    Our latest research got published in Geoderma (Elsevier): "SoilNet: A multimodal multitask model for hierarchical classification of soil horizons". 
+
+    I am proud to see our work on SoilNet featured by our partners from the Federal Institute for Geosciences and Natural Resources (BGR). While general-purpose LLM's are impactful and impressive, our research in Geoderma demonstrates that for specialized fields like pedology they still hit a wall when faced with the structural logic and complexity.
+
+    Food security: Accurate soil data is the foundation of global food security, and by automating the classification process, SoilNet contributes towards scalable high-resolution mapping for sustainable land management. We are happy to share more details in the attached post.
+
+    Thanks: This work was a collaborative effort between geoscientists and ML researchers. A sincere thank you to my co-authors: Teodor Chiaburu, Einar Eberhardt, Stefan Broda, Joey Prüssing, Frank Haußer, and Felix Biessmann.
+
+    Read the full study here: https://doi.org/10.1016/j.geoderma.2026.117684
+- date: 2025-11-19
+  title: Dies academicus at BHT, Hochschultag 2025
+  image: 2025-11-hochschultag-1.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:share:7396928176473546752/
+  slug: 2025-11-hochschultag
+  author: Berlin University of Applied Sciences Berlin (BHT)
+  images:
+  - 2025-11-hochschultag-1.jpg
+  body: |
+    🎓✨ Dies academicus an der BHT ✨🎓 
+     
+    Am alljährlichen Hochschultag feiern wir traditionell jedes Jahr die besten Absolvent*innen sowie herausragende Studierende und Lehrende des vergangenen Jahres. Herzlichen Glückwunsch an alle! 👏 
+
+    Mehr Infos zu den Ehrungen und Preisträger*innen unter: https://www.bht-berlin.de/3326/article/10119
+     
+    Vielen Dank an alle Beteiligten und besonders Alexander Schirp, Hauptgeschäftsführer der Vereinigung der Unternehmensverbände in Berlin und Brandenburg e.V. (UVB) für den motivierenden Festvortrag.
+- date: 2025-10-14
+  title: Presented our FPGA deployment paper at IEEE ISC2 2025 in Patras
+  image: 2025-10-isc2-1.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7383839094747000832/
+  slug: 2025-10-isc2
+  author: Vipin Singh
+  author_url: https://www.linkedin.com/in/vipin-singh-131402271
+  images:
+  - 2025-10-isc2-1.jpg
+  - 2025-10-isc2-2.jpg
+  - 2025-10-isc2-3.jpg
+  body: |
+    Last week, I had the opportunity to participate in the 11th IEEE International Smart Cities Conference (ISC2 2025, https://isc2-2025.org/), held in Patras, Greece — an inspiring event with insightful keynotes and discussions on how our future in urban communities is being shaped.
+
+    There I presented our latest research as part of the RIWWER project. Our publication, „Automated Energy-Aware Time-Series Model Deployment on Embedded FPGAs for Resilient Combined Sewer Overflow Management“, demonstrates how resilient and energy-efficient machine learning models can be deployed on small edge devices — with even less computational power than the average smartphone.
+
+    This research supports municipalities in making our urban water infrastructure more resilient to the intensifying impacts of climate change.
+
+    This work has been a collaborative effort with my co-authors and supervisors, a huge thanks goes to Tianheng Ling, Chao Qian, Felix Biessmann and Gregor Schiele.
+- date: 2025-10-09
+  title: RIWWER project successfully completed
+  image: 2025-10-riwwer-1.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7381958067971727360/
+  slug: 2025-10-riwwer
+  author: Fakultät für Wirtschaftswissenschaften der RWTH Aachen University
+  author_url: 
+    https://www.linkedin.com/company/fakult%C3%A4t-f%C3%BCr-wirtschaftswissenschaften-der-rwth-aachen-university
+  images:
+  - 2025-10-riwwer-1.jpg
+  - 2025-10-riwwer-2.jpg
+  - 2025-10-riwwer-3.jpg
+  body: |
+    🌧️ KI gegen Starkregen: Projekt RIWWER erfolgreich abgeschlossen
+
+    Starkregenereignisse nehmen im Zuge des Klimawandels zu. Unsere städtischen Abwassernetze geraten dabei schnell an ihre Grenzen. Das Forschungsprojekt RIWWER an unserem RWTH Institute for Technology and Innovation Management (TIM) hat in einem großen Konsortium aus Wissenschaft und Wirtschaft in den letzten drei Jahren daran gearbeitet, Kommunen mit intelligenter Sensorik und KI-Algorithmen besser auf Extremwetter vorzubereiten 💡🌧️ 
+
+    👉 Die wichtigsten Ergebnisse:
+
+    🔹 KI-basierte Vorhersage: Ein Dashboard kombiniert Online-Wetterdaten mit Sensordaten aus dem Netz und prognostiziert Füllstände und Mischwasserüberläufe. Die datengetriebene KI ist auf andere Netze übertragbar (Demo zum selber testen).
+    🔹 KI-basierte Steuerung: Ein Teststand ermöglicht das Training automatisierter Steuerungen und hilft bei der Überwindung von Modellunsicherheiten.
+    🔹 VDI-Expertenempfehlung 4900: Ein Leitfaden für Betreiber, wie Digitalisierungsvorhaben in Abwassernetzen erfolgreich umgesetzt werden können (Veröffentlichung im Frühjahr 2026).
+
+    Luis Alexander Kaufhold und Frank Piller aus unserer Fakultät haben RIWWER wirtschaftlich begleitet. Der Fokus lag dabei auf dem Thema Geschäftsmodellentwicklung:
+
+    🔸 Wer profitiert von KI-Steuerungen? Vor allem Betreiber in Mittel- und Großstädten mit Mischsystem, ausreichendem Speichervolumen und vermaschten Netzen.
+    🔸 Wie lassen sich Daten weiter nutzen? Betreiber können Füllstands- und Durchflussdaten teilen – z.B. mit Kläranlagen (Planung von Reinigung & Energieversorgung) oder mit Frühwarnsystemen (Überflutungswarnungen für Bürger*innen).
+
+    🤝 Das Konsortium – ein starkes Team aus Forschung, Wirtschaft und Verbänden:
+
+    Fraunhofer IMS · Universität Duisburg-Essen · Berliner Hochschule für Technik (BHT) · KROHNE · Okeanos Smart Data Solutions GmbH · HST Systemtechnik GmbH & Co.KG · VDI e.V. · RWTH Aachen University
+
+    Gefördert wurde RIWWER vom Bundesministerium für Wirtschaft und Energie (BMWE) im Rahmen des Technologieprogramms EDGE Datenwirtschaft.
+- date: 2025-09-18
+  title: Presented SoilNet at KIDA-KON 2025 in Braunschweig
+  image: 2025-09-kida-kon-1.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7374493480510865408/
+  slug: 2025-09-kida-kon
+  author: Teodor Chiaburu
+  author_url: https://www.linkedin.com/in/teodor-chiaburu-aa8422b7
+  images:
+  - 2025-09-kida-kon-1.jpg
+  - 2025-09-kida-kon-2.jpg
+  body: |
+    Just came back from Braunschweig, where me and my colleague Vipin Singh presented our work in automating soil horizon annotation at KIDA-KON 2025. Many thanks to our hosts from Thünen-Institut for making this event possible. We were very delighted to take part and represent the Berliner Hochschule für Technik (BHT).
+- date: 2025-07-18
+  title: Graduation ceremony at BHT, Department VI
+  image: 2025-07-graduation-1.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:share:7352030352590237696/
+  slug: 2025-07-graduation
+  author: BHT Alumni-Programm
+  images:
+  - 2025-07-graduation-1.jpg
+  body: |
+    Heute gab es viel zu feiern!
+    Der Fachbereich VI Informatik und Medien der Berliner Hochschule für Technik (BHT) Hochschule verabschiedete seine Absolventinnen und Absolventen. 
+
+    Die Beuth-Halle erstrahlte im geschmückten Ambiente, und die Dekanin Prof. Dr. Sauer führte wie immer souverän durch die Veranstaltung eines Fachbereichs, der es in sich hat. Hier kann man zum Beispiel Screen Based Media, ein Studiengang für Kameraenthusiasten, Medieninformatik oder Drucktechnik studieren.
+
+    Das Augenmerk liegt aktuell jedoch auf den Studienschwerpunkten und.
+
+    Wir gratulieren allen Absolventinnen und Absolventen zu ihrem erfolgreich bestandenen Studium und wünschen ihnen viel Erfolg auf ihren weiteren Studien- und Berufswegen.
+
+    Die innovativen Studiengänge bieten für Technikbegeisterte viele Möglichkeiten. Einfach mal reinschauen, es lohnt sich.
+    👉 https://www.bht-berlin.de/vi
+
+    petra sauer, Jean Junior Ngalle Yien, Hessam Mehdizadeh
+- date: 2025-07-08
+  title: Presented my first full paper at SpliTech 2025 in Split
+  image: 2025-07-splitech-1.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7348234387173400576/
+  slug: 2025-07-splitech
+  author: Vipin Singh
+  author_url: https://www.linkedin.com/in/vipin-singh-131402271
+  images:
+  - 2025-07-splitech-1.jpg
+  - 2025-07-splitech-2.jpg
+  - 2025-07-splitech-3.jpg
+  body: |
+    Proud to announce that my first full paper was accepted and presented at the Smart Cities track of the 10th International Conference on Smart and Sustainable Technologies (SpliTech 2025), co-sponsored by IEEE. This was one of my first conference experiences, and it was a fantastic opportunity to share my research and connect with the community in the beautiful city of Split in Croatia ☀️. 
+
+    I am very thankful for the support of my colleagues and supervisor. Tianheng Ling, Teodor Chiaburu, Felix Biessmann
