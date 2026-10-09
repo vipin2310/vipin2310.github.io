@@ -362,6 +362,33 @@ languages:
 # News & talks, newest first. Keep titles short: visitors mostly look at the image and the headline;
 # the full story stays on LinkedIn. `fit: contain` for figures that must not be cropped.
 news:
+- date: 2026-10-09
+  title: Presented the SoilNet App at KIDA-KON 2026 in Berlin
+  image: 2026-10-kida-kon-1.jpg
+  url: https://www.linkedin.com/feed/update/urn:li:ugcPost:7514290789934616576/
+  slug: 2026-10-kida-kon
+  author: Vipin Singh
+  author_url: https://www.linkedin.com/in/vipin-singh-131402271
+  images:
+  - 2026-10-kida-kon-1.jpg
+  - 2026-10-kida-kon-2.jpg
+  - 2026-10-kida-kon-3.jpg
+  body: |
+    I was happy to return to KIDA KON 2026 last week! Last year we introduced our model SoilNet, which automatically describes and classifies soil horizons, the core units of soil science and agriculture. This time we showcased the SoilNet App, which allows field annotators and other interested users to interact with SoilNet and experience how AI assistance can support them in this task.
+
+    Alongside the app, we presented the results of the user study we conducted with it. The study shows that experts often disagree within this complex taxonomy (over 1,200 labels!). AI assistance made their annotations more consistent while also improving their performance.
+
+    If you’d like to learn more about this work, you can find our paper published at IJCAI International Joint Conferences on Artificial Intelligence Organization 2026 here: https://doi.org/10.24963/ijcai.2026/993
+
+    We would also like to invite you to our workshop on AI in soil science on 9 December in Berlin. Find out more here: https://calgo-lab.de/soil-workshop/en/
+
+    Thank you to everyone who contributed to this work: Teodor Chiaburu, Joey Prüssing, Sina Hesse, Einar Eberhardt, Stefan Broda, Frank Haußer, Felix Biessmann
+
+    Project at: Berlin University of Applied Sciences Berlin (BHT), Federal Institute for Geosciences and Natural Resources (BGR)
+
+    Co-funded by: Deutsche Forschungsgemeinschaft (DFG) - German Research Foundation
+
+    KIDA located at: Bundesinstitut für Risikobewertung in Berlin
 - date: 2026-08-26
   title: Presented two demos at IJCAI-ECAI 2026 in Bremen
   image: 2026-08-ijcai-3.jpg

@@ -2,7 +2,7 @@
 
 > Vipin Singh is a PhD Candidate in Data Science at Berliner Hochschule für Technik (BHT) in Berlin, Germany, supervised by Prof. Dr. Felix Bießmann in the Cognitive Algorithms Lab. The research develops machine learning for environmental monitoring (urban sewer systems, soil science, groundwater) and evaluates it holistically: predictive performance, model complexity and robustness when data are incomplete, noisy or sparse.
 
-Website: https://vipin-singh.bio/. Last updated: 2026-10-07.
+Website: https://vipin-singh.bio/. Last updated: 2026-10-09.
 
 ## Contact
 
@@ -42,6 +42,7 @@ Holistic model evaluation, Robustness, Time series forecasting, Spatiotemporal m
 
 ## News and talks
 
+- 2026-10-09: [Presented the SoilNet App at KIDA-KON 2026 in Berlin](https://vipin-singh.bio/news/2026-10-kida-kon.html)
 - 2026-08-26: [Presented two demos at IJCAI-ECAI 2026 in Bremen](https://vipin-singh.bio/news/2026-08-ijcai.html)
 - 2026-02-06: [SoilNet published in Geoderma](https://vipin-singh.bio/news/2026-02-geoderma.html)
 - 2025-11-19: [Dies academicus at BHT, Hochschultag 2025](https://vipin-singh.bio/news/2025-11-hochschultag.html)

@@ -85,6 +85,7 @@ Combined sewer systems overflow during heavy rain. In the joint project RIWWER, 
 
 ## News and talks
 
+- 2026-10-09: [Presented the SoilNet App at KIDA-KON 2026 in Berlin](https://vipin-singh.bio/news/2026-10-kida-kon.html) (LinkedIn: https://www.linkedin.com/feed/update/urn:li:ugcPost:7514290789934616576/)
 - 2026-08-26: [Presented two demos at IJCAI-ECAI 2026 in Bremen](https://vipin-singh.bio/news/2026-08-ijcai.html) (LinkedIn: https://www.linkedin.com/feed/update/urn:li:ugcPost:7498347025810321408/)
 - 2026-02-06: [SoilNet published in Geoderma](https://vipin-singh.bio/news/2026-02-geoderma.html) (LinkedIn: https://www.linkedin.com/feed/update/urn:li:share:7425513348609363968/)
 - 2025-11-19: [Dies academicus at BHT, Hochschultag 2025](https://vipin-singh.bio/news/2025-11-hochschultag.html) (LinkedIn: https://www.linkedin.com/feed/update/urn:li:share:7396928176473546752/)
@@ -110,4 +111,4 @@ Combined sewer systems overflow during heavy rain. In the joint project RIWWER, 
 - English: Fluent
 - Hindi: Proficient
 
-_Last updated 2026-10-07. PDF: <https://vipin-singh.bio/cv/Vipin_Singh_CV.pdf>_
+_Last updated 2026-10-09. PDF: <https://vipin-singh.bio/cv/Vipin_Singh_CV.pdf>_
