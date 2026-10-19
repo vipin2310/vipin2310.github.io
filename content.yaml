@@ -362,6 +362,26 @@ languages:
 # News & talks, newest first. Keep titles short: visitors mostly look at the image and the headline;
 # the full story stays on LinkedIn. `fit: contain` for figures that must not be cropped.
 news:
+- date: 2026-10-15
+  title: SoilNet workshop on AI in soil science, 9 December in Berlin
+  image: 2026-10-ki-bodenkunde-1.jpg
+  fit: contain
+  url: https://www.linkedin.com/feed/update/urn:li:share:7516456706915196928/
+  slug: 2026-10-soil-workshop
+  author: Bundesanstalt für Geowissenschaften und Rohstoffe (BGR)
+  images:
+  - 2026-10-ki-bodenkunde-1.jpg
+  body: |
+    📆 KI in der Bodenkunde - SoilNet Workshop am 9. Dezember 2026 in Berlin
+
+    Die Bundesanstalt für Geowissenschaften und Rohstoffe (BGR) und die Berliner Hochschule für Technik (BHT) stellen bei der Veranstaltung im Einstein Center Digital Future (Beginn: 9 Uhr) eine KI-basierte Lösung zur automatisierten Segmentierung und Klassifizierung von Bodenhorizonten vor.
+
+    Eine interaktive Kurzstudie bietet Interessierten die Gelegenheit zum thematischen Austausch. Zudem gibt es eine Poster-Session zu digitalen Methoden im Bodenschutz.
+
+    👉 Hier gehts zur Anmeldung: https://calgo-lab.de/soil-workshop/en/
+    Unter dem Link finden Sie auch weitere Infos zum Programm.
+
+    #KI #Boden #Bodenhorizonte #Bodenschutz
 - date: 2026-10-09
   title: Presented the SoilNet App at KIDA-KON 2026 in Berlin
   image: 2026-10-kida-kon-1.jpg
