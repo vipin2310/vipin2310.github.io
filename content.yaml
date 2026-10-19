@@ -85,7 +85,7 @@ projects:
 - id: sewer
   title: RIWWER, resilient forecasting for urban sewer systems
   partner: with University of Duisburg-Essen and partners
-  years: 2023–present
+  years: 2023–2026
   text: >-
     Combined sewer systems overflow during heavy rain. In the joint project RIWWER, I coordinated the AI work package:
     forecasting models for rain basins that stay robust to sensor failures and run both in the cloud and on embedded
@@ -294,7 +294,7 @@ experience:
   - Multimodal deep learning models for automatic soil horizon description from profile images and metadata, 
     with BGR.
   - Spatiotemporal groundwater level prediction at unmonitored locations, with BGR.
-  - Continuation of the RIWWER work packages on time series modeling for urban wastewater management.
+  - Continuation of the RIWWER work packages on time series modeling for urban wastewater management, until the project ended in March 2026.
   - Teaching support in data science courses, including preparing material and substitute lecturing.
 - org: Berliner Hochschule für Technik (BHT)
   role: Student Research Assistant, Data Science

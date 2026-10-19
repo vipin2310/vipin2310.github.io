@@ -17,7 +17,7 @@ Holistic model evaluation, Robustness, Time series forecasting, Spatiotemporal m
 ### Research Associate (PhD Candidate), Data Science, Berliner Hochschule für Technik (BHT) (Feb 2025 – present, Berlin, Germany)
 - Multimodal deep learning models for automatic soil horizon description from profile images and metadata, with BGR.
 - Spatiotemporal groundwater level prediction at unmonitored locations, with BGR.
-- Continuation of the RIWWER work packages on time series modeling for urban wastewater management.
+- Continuation of the RIWWER work packages on time series modeling for urban wastewater management, until the project ended in March 2026.
 - Teaching support in data science courses, including preparing material and substitute lecturing.
 
 ### Student Research Assistant, Data Science, Berliner Hochschule für Technik (BHT) (Dec 2023 – Jan 2025, Berlin, Germany)
@@ -55,7 +55,7 @@ Can a dense monitoring network predict groundwater levels at future times and at
 
 Describing soil horizons from profile images is slow and varies between experts. SoilNet mirrors the experts' annotation workflow, and in a user study, experts working with the SoilNet App annotated more accurately and more consistently. [Live demo](https://soilnet.demo.calgo-lab.de/) · [Code](https://github.com/calgo-lab/BGR) · [BGR](https://www.bgr.bund.de/)
 
-### RIWWER, resilient forecasting for urban sewer systems (2023–present, with University of Duisburg-Essen and partners)
+### RIWWER, resilient forecasting for urban sewer systems (2023–2026, with University of Duisburg-Essen and partners)
 
 Combined sewer systems overflow during heavy rain. In the joint project RIWWER, I coordinated the AI work package: forecasting models for rain basins that stay robust to sensor failures and run both in the cloud and on embedded FPGAs at the edge. [Live demo](https://riwwer.demo.calgo-lab.de/) · [Code](https://github.com/calgo-lab/resilient-timeseries-evaluation) · [Project](https://www.riwwer.fraunhofer.de/)
 
